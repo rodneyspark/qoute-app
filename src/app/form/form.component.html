@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="container" style="background-color: #cfe4e4;">
+    <div></div>
+      <form  (ngSubmit)='submitQoute()' #quoteForm ='ngForm'>
+        <div class="form-group">
+          <label for="qoute"> type </label>
+          <input type="text" class="form-control" id="type" [(ngModel)]=" newQoute.type" name="type" #type='ngModel' required>
+
+          <label for="qoute"> Quote </label>
+          <input type="text" class="form-control" id="quote" [(ngModel)]=" newQoute.qoute" name="qoute" #qoute='ngModel' required>
+
+          <label for="author"> authour</label>
+          <input type="text" class="form-control" id='author' [(ngModel)]=" newQoute.authour" name='author' #authour='ngModel' required>
+
+          <label for="submitted">submitted by :</label>
+          <input type="text" class="form-control" id="submitted" [(ngModel)]=" newQoute.submitted" name="submitted" #submitted='ngModel' required>
+
+          <label for="submitted">submitted on :</label>
+          <input type="date" class="form-control" id="since" [(ngModel)]=" newQoute.completeDate" name="completeDate" #completeDate='ngModel' required>
+        </div>
+        <button type="submit"class="btn btn-outline-dark">ADD QUOTE</button>
+      </form>
+  </div>
+</div>

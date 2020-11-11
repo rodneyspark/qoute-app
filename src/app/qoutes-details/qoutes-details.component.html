@@ -1,0 +1,8 @@
+<p>{{qoute.qoute }}</p>
+<p>{{qoute.authour }}</p>
+<p>{{qoute.submitted }}</p>
+<p>upvotes:{{numberofupvotes}}</p>
+<p>downvotes:{{numberofdownvotes}}</p>
+<button class="btn btn-primary" (click)='upvote()'>upvote</button>
+<button class="btn btn-secondary" (click)='downvote()'>downvote</button>
+<button (click)= 'qouteDelete(true)'>Delete Qoute</button>
